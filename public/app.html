@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="user-profile">
+                <img src="https://ui-avatars.com/api/?name=Jose" alt="Profile" class="avatar">
+                <div>
+                    <h2>Hello, Jose!</h2>
+                    <span>37 Días de racha</span>
+                </div>
+            </div>
+            <button class="settings-btn"><img src="img/vector4.png" alt="Configuración"></button>
+        </header>
+
+        <div class="search-container">
+            <input type="search" placeholder="Buscar/Marca" class="search-input">
+        </div>
+
+        <!-- Navegación de pestañas con botones de ID únicos -->
+        <div class="slider-container">
+        <nav class="tab-nav">
+            <button class="tab-btn active" id="rewards-tab">Recompensas</button>
+            <button class="tab-btn" id="routine-tab">Rutinas</button>
+            <button class="tab-btn" id="nutrition-tab">Nutrición</button>
+            <button class="tab-btn" id="community-tab">Comunidad</button>
+        </nav>
+        </div>
+
+        <!-- Sección principal de Recompensas -->
+        <main class="main-content" id="rewards-section">
+            <h3>Premios Desbloqueados</h3>
+            <div class="rewards">
+                <div class="reward-card">
+                    <div class="reward-info">
+                        <span class="days">Día 15 a 35</span>
+                        <h4>Bono de Regalo</h4>
+                        <img src="img/reward.jpg" alt="Bono de regalo">
+                        <span class="status available"><strong>¡Disponible!</strong></span>
+                    </div>
+                    <button class="claim-btn">Reclamar</button>
+                </div>
+
+                <div class="reward-card inactive">
+                    <div class="reward-info">
+                        <span class="days">Día 35 a 65</span>
+                        <h4>Taller de Cocina para 2</h4>
+                        <img src="img/reward2.png" alt="Bono de regalo" class="reward2">
+                        <span class="status"><strong>No Disponible</strong></span>
+                    </div>
+                    <button class="claim-btn" disabled>Reclamar</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sección para Rutinas -->
+        <section class="main-content hidden" id="routine-section">
+            <h3>Hola de nuevo</h3>
+            <div class="routine-day">
+                <img src="img/ruta-de-imagenP.jpg" alt="Personas realizando Sentadillas" class="imagen-principal">
+                    <div class="overlay-text"><p><strong>CONTINUA CON TU RACHA</strong></p>
+                        <p>Hombros y espalda</p>
+                        <p>Duración: 30min</p>
+                        <button class="claim-btn2" onclick="window.location.href='rutina.html';">Rutina del día</button></div>
+            </div>
+            <h4>Otras Opciones de Entrenamiento</h4>
+            <div class="routine-gallery">
+                <div class="routine-item">
+                    <img src="img/ruta-de-imagen1.jpg" alt="Pareja estirando en el piso" class="imagen1">
+                    <p>Todo el cuerpo</p>
+                    <p>Duración: 15 min</p>
+                </div>
+                <div class="routine-item">
+                    <img src="img/ruta-de-imagen2.jpg" alt="Comunidad de personas ejercitandose" class="imagen2">
+                    <p>Todo el cuerpo</p>
+                    <p>Duración: 25 min</p>
+                </div>
+                <div class="routine-item">
+                    <img src="img/ruta-de-imagen3.jpg" alt="Hombre estirando" class="imagen3">
+                    <p>Estiramientos</p>
+                    <p>Duración: 5 min</p>
+                </div>
+                <div class="routine-item">
+                    <img src="img/ruta-de-imagen4.jpg" alt="Personas corriendo" class="imagen4">
+                    <p>Estiramientos</p>
+                    <p>Duración: 5 min</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección para Nutrición -->
+        <section class="main-content hidden" id="nutrition-section">
+            <h3>Tu alimentación</h3>
+            <div class="routine-day">
+                <img src="img/comidaP.png" alt="Personas realizando Sentadillas" class="imagen-principal-comida">
+                    <div class="overlay-food"><p><strong>MENÚ SEMANAL</strong></p>
+                        <button class="claim-btnM" onclick="window.location.href='menu.html';">Ver</button></div>
+            </div>
+            <h4>Media tarde</h4>
+            <div class="routine-gallery">
+                <div class="routine-item">
+                    <img src="img/image1.png" alt="Pareja estirando en el piso" class="imagen1">
+                    <button class="food-button">Ver</button>
+                </div>
+                <div class="routine-item">
+                    <img src="img/image3.png" alt="Comunidad de personas ejercitandose" class="imagen2">
+                    <button class="food-button">Ver</button>
+                </div>
+            </div>
+            <h4>Postres</h4>
+            <div class="routine-gallery">
+                <div class="routine-item">
+                    <img src="img/image2.png" alt="Pareja estirando en el piso" class="imagen1">
+                    <button class="food-button">Ver</button>
+                </div>
+                <div class="routine-item">
+                    <img src="img/image4.png" alt="Comunidad de personas ejercitandose" class="imagen2">
+                    <button class="food-button">Ver</button>
+                </div>
+            </div>
+        </section>
+        <!-- Sección para Comunidad-->
+        <section class="main-content hidden" id="community-section">
+            <h3>Usuarios</h3>
+            <div class="users">
+                <img src="img/user3.png" alt="Hombre asistiendo a clases">
+                <img src="img/user4.png" alt="Gato acostado">
+                <img src="img/user5.png" alt="Hombre riendo">
+            </div>
+            <div class="slider-container-community">
+                <div class="item-community">
+                    <div class="userimg"><img src="img/user1.png" alt=""></div>
+                    <h4>Luis - 40 Días de racha</h4>
+                    <p>La rutina de hoy fue increíble. Mi espalda duele mucho menos que antes, y siento que tengo más energía que nunca.</p>
+                </div>
+                <div class="item-community">
+                    <div class="userimg2"><img src="img/user2.png" alt=""></div>
+                    <h4>Martha - 12 Días de racha</h4>
+                    <p>Aunque los ejercicios todavía me resultan un poco agotadores, aquí sigo. ¡Cuenten conmigo!</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Navegación inferior con botones de ID únicos -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" id="rewards-nav"><img src="img/vector1.png" alt="Recompensas"></button>
+            <button class="nav-btn" id="routine-nav"><img src="img/vector2.png" alt="Rutina"></button>
+            <button class="nav-btn" id="nutrition-nav"><img src="img/vector3.png" alt="Nutrición"></button>
+        </nav>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
